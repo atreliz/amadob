@@ -1,0 +1,58 @@
+/*RESET*/
+h3 {
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+
+
+/*CSS*/
+body{
+	background: white;
+}
+header,footer,section{
+	width:90%;
+	padding:0% 5%;
+	position: absolute;
+	left:0%; right:0%;
+	text-align: center;
+}
+
+header{ top:0%; height:20%; background: rgba(0,0,0,.8); color:white;}
+
+section{top:20%; height:70%; background: white;}
+#sms{height: 5%; padding: 4% 0%;}
+#novia{height:90%;}
+
+footer{ top:90%; height:10%; background: rgba(0,0,0,.8); color:white;}
+
+#sms.cumple{
+ color:red;
+}
+#sms.nocumple{	color:blue;}
+
+
+#novia{
+	display: block;
+	float: left;
+	width:100%;
+	height:90%;
+}
+#novia.nocumple{
+
+	
+	background-position: top center;
+	background: url("silueta1.png") no-repeat;
+	background-size: cover;
+}
+
+#novia.cumple{
+	background-position: top center;
+	background: url("silueta2.png") no-repeat;
+	background-size: cover;
+}
+

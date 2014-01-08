@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+
+    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cumpleaños de Ama</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="http://doc.dev.kuasars.com/api/images/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="container">
+      <h1> Es hoy el cumple de la novia de Mati?</h1>
+    </header>
+
+    <section class="container">
+      <h3 id="sms">Waiting result</h3>
+      <div id="novia"  class="nocumple"></div>
+     
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p>Atreliz copyright 2014. all rights reserved</p>
+    </footer>  
+
+    <script>
+      //This will change url to DEV,PRE,PRO
+        var today = new Date(),
+           dd = today.getDate(),
+           mm = today.getMonth()+1, //January is 0!
+           yyyy = today.getFullYear();
+           console.log(dd+"-"+mm+"-"+yyyy);
+
+
+        if(dd===8 && mm ===1){
+          //alert("hoy es el cumple de Ama!");
+          document.getElementById('novia').setAttribute("class","cumple");
+          document.getElementById('sms').setAttribute("class","cumple");
+          document.getElementById('sms').innerHTML="Felices "+ (yyyy-1981)+" Ama!";
+        }
+        else{
+          //alert("Hoy es una excusa de nuevo!");
+          document.getElementById('novia').setAttribute("class","nocumple");
+          document.getElementById('sms').setAttribute("class","nocumple");
+          document.getElementById('sms').innerHTML="Hoy es una excusa de nuevo!";
+        }
+  </script>
+
+  </body>
+</html>
+
+
